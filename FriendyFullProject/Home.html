@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="./Home.css" type="text/css" rel="stylesheet" />
+        <link  rel="shortcut icon" type="image/svg" href="./Images/users-solid.svg"  />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    </head>
+
+
+    <body>
+        <div class="header">
+                <header>
+                    <img src="./Images/Freelancers-in-the-UK-for-Twitter-150x150.jpg" />
+                    <h2><strong>Friendy</strong></h2>
+                    <form>
+                         <input class="search" type="text" placeholder="Search" />
+                    </form>
+                    <i id = "searchicon" class="fas fa-search"></i>
+                    <button class= "dark" onclick="changeMode()"> <i class="fas fa-moon "></i></button>
+                    <button class = "light" onclick="changeMode()"> <i class="fas fa-sun"></i></button>
+                </header> 
+
+                <div class="restcontainer">
+                    <div class="menu">
+                        <img src="./Images/profile-circle.svg"  />
+
+                        <ul>
+                            <li><a href="./Home.html">Home</a></li>
+                            <li><a href="#">Notification</a></li>
+                            <li><a href="#">Messages</a></li>
+                            <li><a href="#">Collection</a></li>
+                            <li><a href="#">Subscription</a></li>
+                            <li><a href="#">Collection</a></li>
+                            <li><a href="./Profile.html">Profile</a></li>
+                            <li><a href="./LogIn.html">Login</a></li>
+                            <li><a href="./Regester.html">Register</a></li>
+
+                        </ul>
+                    </div>
+
+                    <div class="center">
+                        <div class="posting" id="postingSection">
+                            <form action="">
+                                <textarea id="postText" class="text" placeholder="What's happening?"></textarea>
+                            </form>
+                            
+
+                            <ul>
+                                <li>
+                                   <img src="./Images/image-solid.svg"  />
+                                </li>
+
+                                <li>
+                                    <img src="./Images/face-smile-solid.svg"/>
+                                </li>
+                            </ul>
+
+                            <button class="publishbutton" id="publishButton">PUBLISH POST</button>
+                        </div>
+                        <div id="postsContainer">
+
+                        <div class="posts">
+                            <div class="picandname">
+                                <img src="./Images/userpic.jpg" />
+                                <h3>Maram Mohamad</h3>
+                                <p>@maram_mohamad</p>
+                            </div>
+                            <p class="paragraph">
+                                This is my first post here ,it is realy fantastic app.
+                            </p>
+
+                            <ul>
+                                <li>
+                                    <p> 0 <img src="./Images/thumbs-up-solid.svg"  /></p>
+                                </li>
+
+                                <li>
+                                   <p>  0 <img src="./Images/share-solid.svg"/></p>
+                                 </li>
+                                 <li>
+                                    <p> 0 <img src="./Images/comment-solid.svg"/></p> 
+                                  </li>  
+                            </ul>
+
+                            <button class="sendtip">SEND TIP</button>
+                        </div>
+
+                    
+                        <div class="posts">
+                            <div class="picandname">
+                                <img src="./Images/company.avif" />
+                                <h3>Egal Company</h3>
+                                <p>@egalCompany</p>
+                            </div>
+                            <p class="paragraph">
+                                Reach the right people ,
+                                Create a job post in minutes<br> and reach the largest pool of professionals.<br>
+                            </p>
+
+                            <ul>
+                                <li>
+                                    <p> 0 <img src="./Images/thumbs-up-solid.svg"  /></p>
+                                </li>
+
+                             
+
+
+                                <li>
+                                   <p>  0 <img src="./Images/share-solid.svg"/></p>
+                                 </li>
+                                 <li>
+                                    <p> 0 <img src="./Images/comment-solid.svg"/></p> 
+                                  </li>  
+                            </ul>
+
+                            <button class="sendtip">SEND TIP</button>
+                        </div>
+
+                        <div class="posts">
+                            <div class="picandname">
+                                <img src="./Images/institution.avif" />
+                                <h3>COOP Institution</h3>
+                                <p>@CInstitution</p>
+                            </div>
+                            <p class="paragraph">
+                                It is your chance 
+                                <!-- <img src="./Images/1131w-xPHQaS2N5_4.webp" > -->
+                            </p>
+
+                            <ul>
+                                <li>
+                                    <p> 0 <img src="./Images/thumbs-up-solid.svg"  /></p>
+                                </li>
+
+                              
+
+                                <li>
+                                   <p>  0 <img src="./Images/share-solid.svg"/></p>
+                                 </li>
+
+                                 <li>
+                                    <p> 0 <img src="./Images/comment-solid.svg"/></p> 
+                                  </li>  
+                            </ul>
+
+                            <button class="sendtip">SEND TIP</button>
+                        </div>
+
+                    </div>
+                </div>
+        </div>
+    </div>
+       <script>
+
+
+function changeMode() {
+    var element = document.body;
+    var darkBtn = document.querySelector('.dark');
+    var lightBtn = document.querySelector('.light');
+    
+    element.classList.toggle("dark-mode");
+    
+    if (element.classList.contains("dark-mode")) {
+        darkBtn.style.display = "none";
+        lightBtn.style.display = "block";
+    } else {
+        darkBtn.style.display = "block";
+        lightBtn.style.display = "none";
+    }
+}
+       </script>
+    </body>
+    
+</html>
